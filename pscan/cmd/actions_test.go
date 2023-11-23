@@ -1,15 +1,9 @@
-/*
-Copyright © 2020 The Pragmatic Programmers, LLC
-Copyrights apply to this source code.
-Check LICENSE for details.
-*/
 package cmd
 
 import (
 	"bytes"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"powerful-command-line/pscan/scan"
 
 	"net"
@@ -210,7 +204,7 @@ func TestIntegration(t *testing.T) {
 
 func setup(t *testing.T, hosts []string, initList bool) (string, func()) {
 	// Create temp file
-	tf, err := ioutil.TempFile("", "pScan")
+	tf, err := os.CreateTemp("", "pScan")
 	if err != nil {
 		t.Fatal(err)
 	}
