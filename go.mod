@@ -1,4 +1,4 @@
-module powerful-command-line/pscan
+module powerful-command-line
 
 go 1.21.0
 
@@ -9,12 +9,20 @@ require (
 )
 
 require (
+	github.com/gdamore/encoding v1.0.0 // indirect
+	github.com/gdamore/tcell/v2 v2.0.0 // indirect
+	github.com/lucasb-eyer/go-colorful v1.0.3 // indirect
+	github.com/mattn/go-runewidth v0.0.9 // indirect
+)
+
+require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
+	github.com/mum4k/termdash v0.13.0
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
 	github.com/russross/blackfriday/v2 v2.0.1 // indirect
